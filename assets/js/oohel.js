@@ -47,7 +47,24 @@
     $('.navbar').removeClass('d-none');
   })
 
+
 })(jQuery); // End of use strict
+
+
+// ======================================================================= //
+//  Owl Carousel Services
+// ======================================================================= //
+$('.services-carousel').owlCarousel({
+  autoplay: true,
+  loop: true,
+  margin: 20,
+  dots: true,
+  nav: false,
+  responsiveClass: true,
+  responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 } }
+});
+
+
 
 function consultarProyectos(id){
   var nombreProyecto = ''
